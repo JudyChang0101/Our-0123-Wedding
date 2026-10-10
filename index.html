@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f1e8">
+  <meta name="description" content="謝明凱與張唯琤的婚禮邀請。2027 年 1 月 23 日，台北寒舍艾美酒店。">
+  <title>謝明凱 &amp; 張唯琤｜我們要結婚了</title>
+  <link rel="stylesheet" href="styles.css?v=20261010-11">
+  <script src="script.js?v=20261010-10" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#information">跳至婚禮資訊</a>
+  <main class="invitation">
+    <!-- 主圖。更換 assets/hero-seaside.jpg 即可替換照片。 -->
+    <section class="hero" id="top" aria-label="我們要結婚了">
+      <img class="hero__photo" src="assets/hero-seaside.jpg" width="2000" height="1334" alt="明凱與唯琤在海邊草地上相望，唯琤手持花朵透明傘。" fetchpriority="high">
+      <p class="hero__headline hero__headline--art"><img src="assets/married-sticker.png" alt="WE'RE GETTING MARRIED — MING-KAI &amp; WEI-CHENG" width="1536" height="1024"></p>
+      <span class="hero__grass hero__grass--left" aria-hidden="true"></span><span class="hero__grass hero__grass--right" aria-hidden="true"></span>
+    </section>
+
+    <!-- 導覽從婚禮資訊區開始，向下滑動時固定在右上方。 -->
+    <div class="navigation">
+      <button class="navigation__toggle" type="button" aria-expanded="false" aria-controls="section-menu" aria-label="開啟章節導覽">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="navigation__panel" id="section-menu" aria-label="章節導覽" hidden>
+        <a href="#information">婚禮資訊 <span lang="en">INFORMATION</span></a>
+        <a href="#countdown">倒數 <span lang="en">THE COUNTDOWN</span></a>
+        <a href="#rsvp">出席回函 <span lang="en">RSVP</span></a>
+        <a href="#gallery">婚紗照 <span lang="en">GALLERY</span></a>
+        <a href="#about">關於我們 <span lang="en">ABOUT</span></a>
+      </nav>
+    </div>
+
+    <!-- 婚禮資訊：所有文字均可直接在 HTML 編輯。 -->
+    <section class="information paper" id="information" aria-labelledby="couple-names">
+      <div class="paper-seams" aria-hidden="true"></div>
+      <div class="flower-stamp flower-stamp--one" aria-hidden="true"><img src="assets/flower-stamp.svg" alt=""></div>
+      <div class="flower-stamp flower-stamp--two" aria-hidden="true"><img src="assets/guitar.svg" alt=""></div>
+      <div class="flower-stamp flower-stamp--three" aria-hidden="true"><img src="assets/headphones.svg" alt=""></div>
+      <div class="flower-stamp flower-stamp--four" aria-hidden="true"><img src="assets/music-notes.svg" alt=""></div>
+      <div class="flower-stamp flower-stamp--five" aria-hidden="true"><img src="assets/piano.svg" alt=""></div>
+      <div class="flower-stamp flower-stamp--six" aria-hidden="true"><img src="assets/rock-hand.svg" alt=""></div>
+      <div class="information__content">
+        <header class="couple-heading">
+          <p class="eyebrow" lang="en">THE WEDDING OF</p>
+          <h1 id="couple-names" class="couple-title-art"><span class="sr-only">謝明凱 &amp; 張唯琤</span><img src="assets/couple-rounded.png" alt="" aria-hidden="true" width="2172" height="724"></h1>
+          <p class="invitation-line">誠摯邀請您<span>參加我們的婚禮</span></p>
+        </header>
+        <div class="wedding-date">
+          <time datetime="2027-01-23">2027.01.23</time>
+          <p>（星期六）</p>
+        </div>
+        <dl class="wedding-schedule">
+          <div><dt><time datetime="2027-01-23T11:00:00+08:00" lang="en">11:00 <span>AM</span></time></dt><dd>戶外證婚</dd></div>
+          <div><dt><time datetime="2027-01-23T12:00:00+08:00" lang="en">12:00 <span>PM</span></time></dt><dd>午宴</dd></div>
+        </dl>
+        <span class="little-rule" aria-hidden="true"></span>
+        <div class="venue">
+          <h2><a href="https://maps.app.goo.gl/yFEiMmCBJqcAiXAm9" target="_blank" rel="noopener noreferrer">台北寒舍艾美酒店</a></h2>
+          <p class="venue__english" lang="en"><a href="https://maps.app.goo.gl/yFEiMmCBJqcAiXAm9" target="_blank" rel="noopener noreferrer">Le Méridien Taipei</a></p>
+          <p>3 樓翡翠廳<span class="venue__plus"> + </span>琥珀廳</p>
+          <p>5 樓 <span lang="en">Qubee</span>（證婚）</p>
+          <address>台北市信義區松仁路38號</address>
+        </div>
+        <div class="love-note">
+          <p lang="en">TWO HEARTS<br>ONE JOURNEY<br>FOREVER</p>
+          <img class="love-note__dove" src="assets/dove.svg" alt="" aria-hidden="true">
+          <svg class="love-note__wave" viewBox="0 0 230 44" fill="none" aria-hidden="true"><path d="M2 40Q29 22 43 20Q51 17 47 24Q44 31 59 25L83 14Q97 7 92 16Q89 23 104 16L128 8Q139 3 135 11Q130 20 149 12L170 6Q182 1 177 10Q174 17 189 10L205 4Q214 0 212 6Q210 12 228 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </div>
+      </div>
+    </section>
+    <!-- 倒數：由 script.js 的 WEDDING_CONFIG.weddingDate 控制。 -->
+    <section class="countdown-section paper" id="countdown" aria-labelledby="countdown-title">
+      <div class="countdown-card">
+        <h2 class="section-kicker" id="countdown-title" lang="en">THE COUNTDOWN</h2>
+        <p class="sr-only">距離婚禮還有</p>
+        <div class="countdown" role="timer" aria-live="off" aria-label="婚禮倒數">
+          <div class="flip-card"><span class="countdown__value" data-unit="days">000</span><span class="countdown__label" lang="en">Day</span></div>
+          <div class="flip-card"><span class="countdown__value" data-unit="hours">00</span><span class="countdown__label" lang="en">Hour</span></div>
+          <div class="flip-card"><span class="countdown__value" data-unit="minutes">00</span><span class="countdown__label" lang="en">Min</span></div>
+          <div class="flip-card"><span class="countdown__value" data-unit="seconds">00</span><span class="countdown__label" lang="en">Sec</span></div>
+        </div>
+        <p class="countdown-message" hidden></p>
+      </div>
+    </section>
+
+    <!-- 拼貼：照片、文字、紙膠帶與插畫均為獨立元素。 -->
+    <section class="scrapbook paper" aria-label="我們的日常片刻">
+      <div class="scrapbook__sheet">
+        <p class="handwriting scrapbook__greeting" lang="en">Good food,<br><span>Good people,</span><br><span>Good times.</span></p>
+        <svg class="scrapbook__birds" viewBox="0 0 90 58" fill="none" aria-hidden="true"><path d="M5 18Q26 5 42 23Q57 5 84 6M45 46Q55 36 63 43Q68 31 84 29" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <img class="scrapbook__flower" src="assets/rock-hand.svg" alt="" aria-hidden="true" loading="lazy">
+        <figure class="scrapbook-photo scrapbook-photo--city">
+          <img src="assets/city-adventure.jpg" width="2000" height="1334" alt="明凱與唯琤牽手奔跑過斑馬線，唯琤穿著紅色洋裝。" loading="lazy">
+          <span class="paper-tape paper-tape--top" aria-hidden="true"></span>
+          <span class="paper-tape paper-tape--corner" aria-hidden="true"></span>
+        </figure>
+        <p class="handwriting scrapbook__running" lang="en">Run<br>Together<br>Always</p>
+        <figure class="scrapbook-photo scrapbook-photo--harbor">
+          <img src="assets/harbor-embrace.jpg" width="1334" height="2000" alt="唯琤在港邊從背後擁抱坐著的明凱，兩人開心微笑。" loading="lazy">
+          <span class="paper-tape paper-tape--left" aria-hidden="true"></span>
+        </figure>
+        <p class="handwriting scrapbook__life" lang="en">Life is <br>better <br>with you<span>♡</span></p>
+      </div>
+      <div class="celebration-note">
+        <p class="handwriting" lang="en">We’re so excited<br><span>to celebrate with you!</span></p>
+        <img src="assets/headphones.svg" alt="" aria-hidden="true" loading="lazy">
+        <svg class="celebration-note__grass" viewBox="0 0 390 95" preserveAspectRatio="none" aria-hidden="true"><path d="M0 88Q35 59 59 78L85 70L104 79L143 57L161 66L188 61L217 75L243 56L281 66L324 37L353 23L390 8V95H0Z" fill="#8fb4cb"/><path d="M248 70L240 35L257 64L257 25L267 65L279 15L276 61L298 5L288 56L320 9L307 48L330 0L326 43L350 9L345 35L370 1" stroke="#2775a5" fill="none" stroke-width="2"/></svg>
+      </div>
+    </section>
+
+    <!-- RSVP：沒有網址時僅展示表單，不會收集、傳送或保存任何資料。 -->
+    <section class="rsvp-section paper" id="rsvp" aria-labelledby="rsvp-title">
+      <div class="cloud-strip" aria-hidden="true"></div>
+      <header class="rsvp-heading">
+        <h2 id="rsvp-title"><svg viewBox="0 0 28 23" fill="none" aria-hidden="true"><path d="M2 3L25 2L26 21L2 20Z M3 4L14 13L24 3" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg><span lang="en">RSVP &amp; Dress Code</span></h2>
+        <p>請於 <span data-rsvp-deadline>2026/12/21</span> 前回覆</p>
+        <p lang="en">Dress Code：<span data-dress-code>Smart Casual</span></p>
+      </header>
+      <div class="rsvp-paper">
+        <h3>出席回函</h3>
+        <p class="section-kicker" lang="en">AWAITING YOUR REPLY</p>
+        <form class="attendance-form" id="google-rsvp" method="post" target="rsvp-response" action="https://docs.google.com/forms/d/e/1FAIpQLScfFhU0wPoU-n5aJ1Sqf4HNEOuYsChwdaBxTbFPQC2u9FwxBA/formResponse">
+          <label for="guest-name">🎵 你的名字 *</label>
+          <input id="guest-name" name="entry.539791525" autocomplete="name" value="AAAA" required>
+          <label for="guest-email">📪 電子信箱 *</label>
+          <input id="guest-email" type="email" name="entry.639127675" autocomplete="email" value="test@mail.com" required>
+          <label for="guest-relationship">✅ 與新人關係 *</label>
+          <select id="guest-relationship" name="entry.1437256306" required><option>男方家人親戚</option><option>男方好友</option><option>男方同事</option><option>女方家人親戚</option><option>女方好友</option><option>女方同事</option><option>男女方我都好熟我不想被分類（？）</option></select>
+          <label for="guest-attendance">🧑‍🤝‍🧑 出席意願</label>
+          <select id="guest-attendance" name="entry.2140001566"><option>我會出席，用行動支持</option><option>無法出席，祝福滿滿</option><option value="">尚未選擇</option></select>
+          <div class="attendance-form__counts">
+            <div><label for="adult-guests">🧑‍🤝‍🧑 參加大人數（含本人） *</label><select id="adult-guests" name="entry.50395160" required><option value="0">0</option><option value="1" selected>1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option></select></div>
+            <div><label for="child-guests">🧒 參加小孩數</label><select id="child-guests" name="entry.1613396080"><option value="0" selected>0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option></select></div>
+          </div>
+          <label for="guest-diet">🍎 飲食需求 *</label>
+          <select id="guest-diet" name="entry.1284764337" required><option>葷食</option><option>素食</option><option value="__other_option__">其他</option></select>
+          <div id="diet-other-field" hidden><label for="diet-other">其他飲食需求 *</label><input id="diet-other" name="entry.1284764337.other_option_response" disabled></div>
+          <label for="guest-needs">🎤 其他需求（如：兒童座椅）</label>
+          <textarea id="guest-needs" name="entry.1363624224" rows="3">BBBB</textarea>
+          <label for="paper-invitation">📣 是否需要紙本喜帖 *</label>
+          <select id="paper-invitation" name="entry.526842" required><option value="" selected disabled>請選擇</option><option>是</option><option>否</option></select>
+          <label for="invitation-address">📪 紙本喜帖寄送地址</label>
+          <input id="invitation-address" name="entry.499202026" type="text" autocomplete="street-address">
+          <label for="guest-message">🎤 想對我們說</label>
+          <textarea id="guest-message" name="entry.660727228" rows="3">CCCC</textarea>
+          <button class="rsvp-submit" type="submit">確認送出 SUBMIT</button>
+          <p id="rsvp-status" role="status" aria-live="polite"></p>
+        </form>
+        <div id="rsvp-result" hidden><p>Google 表單回覆結果</p><iframe name="rsvp-response" title="Google 表單送出結果" src="about:blank"></iframe></div>
+        <a class="rsvp-external" target="_blank" rel="noopener noreferrer">另開 Google 表單 ↗</a>
+      </div>
+    </section>
+
+    <!-- 婚紗相簿：按照片可放大；圖片使用同一組可替換素材。 -->
+    <section class="gallery-section" id="gallery" aria-labelledby="gallery-title">
+      <p class="editorial-kicker" lang="en">GALLERY</p>
+      <h2 class="sr-only" id="gallery-title">婚紗照</h2>
+      <div class="gallery-grid">
+        <button class="gallery-photo" type="button" data-photo="assets/couple-walking.jpg" data-caption="couple-walking" aria-label="放大照片：couple-walking"><img src="assets/couple-walking.jpg" width="1334" height="2000" alt="兩人在海邊草地並肩漫步。" loading="lazy"><span class="gallery-photo__label" lang="en">couple-walking</span></button>
+        <button class="gallery-photo" type="button" data-photo="assets/city-adventure.jpg" data-caption="city-adventure" aria-label="放大照片：city-adventure"><img src="assets/city-adventure.jpg" width="2000" height="1334" alt="兩人牽手跑過城市街道。" loading="lazy"><span class="gallery-photo__label" lang="en">city-adventure</span></button>
+        <button class="gallery-photo" type="button" data-photo="assets/harbor-embrace.jpg" data-caption="harbor-embrace" aria-label="放大照片：harbor-embrace"><img src="assets/harbor-embrace.jpg" width="1334" height="2000" alt="兩人在港邊開心相擁。" loading="lazy"><span class="gallery-photo__label" lang="en">harbor-embrace</span></button>
+        <button class="gallery-photo" type="button" data-photo="assets/garden-walk.jpg" data-caption="garden-walk" aria-label="放大照片：garden-walk"><img src="assets/garden-walk.jpg" width="1334" height="2000" alt="兩人在綠意階梯上微笑。" loading="lazy"><span class="gallery-photo__label" lang="en">garden-walk</span></button>
+        <button class="gallery-photo" type="button" data-photo="assets/music-duet.jpg" data-caption="music-duet" aria-label="放大照片：music-duet"><img src="assets/music-duet.jpg" width="1334" height="2000" alt="兩人在藍色音樂佈景中拿著吉他與鍵盤。" loading="lazy"><span class="gallery-photo__label" lang="en">music-duet</span></button>
+        <button class="gallery-photo" type="button" data-photo="assets/record-date.jpg" data-caption="record-date" aria-label="放大照片：record-date"><img src="assets/record-date.jpg" width="1334" height="2000" alt="兩人拿著唱片，在銀色佈景前合影。" loading="lazy"><span class="gallery-photo__label" lang="en">record-date</span></button>
+      </div>
+    </section>
+
+    <!-- 關於我們：可直接編輯個人介紹。 -->
+    <section class="about-section paper" id="about" aria-labelledby="about-title">
+      <p class="editorial-kicker" lang="en">ABOUT US</p>
+      <h2 class="sr-only" id="about-title">關於我們</h2>
+      <div class="profiles">
+        <article class="profile">
+          <div class="profile__avatar profile__avatar--groom"><img src="assets/groom-portrait.jpg" alt="新郎謝明凱" width="1334" height="2000" loading="lazy"></div>
+          <h3 class="profile__name"><span>謝明凱</span> <span class="profile__name-english" lang="en">MING-KAI</span></h3>
+          <span class="profile__instagram" aria-label="新郎 Instagram 帳號待補"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor" stroke="none"/></svg></span>
+          <dl><div><dt>星座</dt><dd>處女座</dd></div><div><dt>喜歡什麼食物</dt><dd>爽的、茶飲、牛排</dd></div><div><dt>討厭什麼東西</dt><dd>糯米椒、榴槤</dd></div><div><dt>怎麼稱呼新娘</dt><dd>寶貝</dd></div></dl>
+        </article>
+        <article class="profile">
+          <div class="profile__avatar profile__avatar--bride"><img src="assets/bride-front-portrait.png" alt="張唯琤微笑的正面肖像" width="1164" height="1298" loading="lazy"></div>
+          <h3 class="profile__name"><span>張唯琤</span> <span class="profile__name-english" lang="en">WEI-CHENG</span></h3>
+          <span class="profile__instagram" aria-label="新娘 Instagram 帳號待補"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor" stroke="none"/></svg></span>
+          <dl><div><dt>星座</dt><dd>金牛座</dd></div><div><dt>喜歡什麼食物</dt><dd><span class="food-item">辣的、</span><span class="food-item">奶茶、</span><span class="food-item">河粉、</span><span class="food-item">牛排</span></dd></div><div><dt>討厭什麼東西</dt><dd>香菇、蟑螂</dd></div><div><dt>怎麼稱呼新郎</dt><dd>寶貝</dd></div></dl>
+        </article>
+      </div>
+    </section>
+    <!-- P.S.：將 xxx 替換為想對賓客說的話。 -->
+    <aside class="postscript paper" aria-labelledby="ps-title"><div class="postscript__note"><h2 id="ps-title" lang="en">P.S.</h2><p>若有想參加戶外證婚的貴賓，請聯繫新人的 Instagram 或「明凱唯琤拍拍印」Line。</p><span aria-hidden="true">♡</span></div></aside>
+    <footer class="closing-banner" aria-label="期待與您一起慶祝">
+      <img class="closing-banner__photo" src="assets/closing-seaside.jpg" alt="明凱與唯琤站在草地上，一起望向海洋與天空。" width="1334" height="2000" loading="lazy">
+      <div class="closing-banner__message closing-banner__message--rounded"><img src="assets/closing-signature.png" alt="WITH LOVE — MING-KAI &amp; WEI-CHENG" width="2172" height="724"></div>
+    </footer>
+    <dialog class="lightbox" aria-labelledby="lightbox-title">
+      <h2 id="lightbox-title" class="sr-only">婚紗照片檢視</h2>
+      <button class="lightbox__close" type="button" aria-label="關閉照片">×</button>
+      <figure><img class="lightbox__image" alt=""><figcaption class="lightbox__caption"></figcaption></figure>
+      <div class="lightbox__controls"><button type="button" data-gallery-prev aria-label="上一張照片">←</button><span class="lightbox__counter"></span><button type="button" data-gallery-next aria-label="下一張照片">→</button></div>
+    </dialog>
+  </main>
+</body>
+</html>
