@@ -8,7 +8,7 @@ const WEDDING_CONFIG = Object.freeze({
   timeZone: "Asia/Taipei",
   rsvpUrl: "https://docs.google.com/forms/d/e/1FAIpQLScfFhU0wPoU-n5aJ1Sqf4HNEOuYsChwdaBxTbFPQC2u9FwxBA/viewform",
   rsvpEmbedUrl: "https://docs.google.com/forms/d/e/1FAIpQLScfFhU0wPoU-n5aJ1Sqf4HNEOuYsChwdaBxTbFPQC2u9FwxBA/viewform?embedded=true",
-  rsvpDeadline: "2026/12/21",
+  rsvpDeadline: "2026/12/21 (一)",
   dressCode: "Smart Casual",
   milestone: 2,
 });

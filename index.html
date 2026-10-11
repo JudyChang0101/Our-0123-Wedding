@@ -6,8 +6,11 @@
   <meta name="theme-color" content="#f4f1e8">
   <meta name="description" content="謝明凱與張唯琤的婚禮邀請。2027 年 1 月 23 日，台北寒舍艾美酒店。">
   <title>謝明凱 &amp; 張唯琤｜我們要結婚了</title>
-  <link rel="stylesheet" href="styles.css?v=20261011-4">
-  <script src="script.js?v=20261011-1" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="styles.css?v=20261012-1">
+  <script src="script.js?v=20261012-2" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#information">跳至婚禮資訊</a>
@@ -110,12 +113,12 @@
       </div>
     </section>
 
-    <!-- RSVP：沒有網址時僅展示表單，不會收集、傳送或保存任何資料。 -->
+    <!-- RSVP：自製表單外觀，送出時直接寫入 Google 表單（欄位 entry 代碼需與 Google 表單一致）。 -->
     <section class="rsvp-section paper" id="rsvp" aria-labelledby="rsvp-title">
       <div class="cloud-strip" aria-hidden="true"></div>
       <header class="rsvp-heading"><img class="mipon mipon--rsvp" src="assets/mipon-portrait.svg" alt="" aria-hidden="true" loading="lazy">
         <h2 id="rsvp-title"><svg viewBox="0 0 28 23" fill="none" aria-hidden="true"><path d="M2 3L25 2L26 21L2 20Z M3 4L14 13L24 3" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg><span lang="en">RSVP &amp; Dress Code</span></h2>
-        <p>請於 <span data-rsvp-deadline>2026/12/21</span> 前回覆</p>
+        <p>請於 <span data-rsvp-deadline>2026/12/21 (一)</span> 前回覆</p>
         <p lang="en">Dress Code：<span data-dress-code>Smart Casual</span></p>
       </header>
       <div class="rsvp-paper">
@@ -126,12 +129,12 @@
           <input id="guest-name" name="entry.539791525" autocomplete="name" placeholder="請輸入姓名" required>
           <label for="guest-email">📪 電子信箱 *</label>
           <input id="guest-email" type="email" name="entry.639127675" autocomplete="email" placeholder="example@mail.com" required>
-          <label for="guest-relationship">✅ 與新人關係 *</label>
-          <select id="guest-relationship" name="entry.1437256306" required><option value="" selected>請選擇</option><option>男方家人親戚</option><option>男方好友</option><option>男方同事</option><option>女方家人親戚</option><option>女方好友</option><option>女方同事</option><option>男女方我都好熟我不想被分類（？）</option></select>
+          <label for="guest-relationship">✅ 與新人關係 *<span class="field-hint">男女方我都好熟我不想被分類（？）</span></label>
+          <select id="guest-relationship" name="entry.1437256306" required><option value="" selected>請選擇</option><option>男方家人親戚</option><option>男方好友</option><option>男方同事</option><option>女方家人親戚</option><option>女方好友</option><option>女方同事</option></select>
           <label for="guest-attendance">🧑‍🤝‍🧑 出席意願</label>
-          <select id="guest-attendance" name="entry.2140001566"><option value="" selected>請選擇</option><option>我會出席，用行動支持</option><option>無法出席，祝福滿滿</option></select>
+          <select id="guest-attendance" name="entry.2140001566"><option value="" selected>請選擇</option><option>一定出席，算我一份</option><option>當日無法出席，祝福滿滿</option></select>
           <div class="attendance-form__counts">
-            <div><label for="adult-guests">🧑‍🤝‍🧑 參加大人數（含本人） *</label><select id="adult-guests" name="entry.50395160" required><option value="" selected>請選擇</option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option></select></div>
+            <div><label for="adult-guests">🧑‍🤝‍🧑 參加大人數（含本人） *</label><select id="adult-guests" name="entry.50395160" required><option value="" selected>請選擇</option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div>
             <div><label for="child-guests">🧒 參加小孩數</label><select id="child-guests" name="entry.1613396080"><option value="" selected>請選擇</option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option></select></div>
           </div>
           <label for="guest-diet">🍎 飲食需求 *</label>
@@ -141,9 +144,9 @@
           <textarea id="guest-needs" name="entry.1363624224" rows="3" placeholder="例如：兒童座椅"></textarea>
           <label for="paper-invitation">📣 是否需要紙本喜帖 *</label>
           <select id="paper-invitation" name="entry.526842" required><option value="" selected disabled>請選擇</option><option>是</option><option>否</option></select>
-          <label for="invitation-address">📪 紙本喜帖寄送地址</label>
+          <label for="invitation-address">📪 紙本喜帖寄送地址 (請填寫確實，以免寄送失敗)</label>
           <input id="invitation-address" name="entry.499202026" type="text" autocomplete="street-address">
-          <label for="guest-message">🎤 想對我們說</label>
+          <label for="guest-message">🎤 想對我們說 ❤️❤️❤️</label>
           <textarea id="guest-message" name="entry.660727228" rows="3" placeholder="留下想對我們說的話"></textarea>
           <button class="rsvp-submit" type="submit">確認送出 SUBMIT</button>
           <p id="rsvp-status" role="status" aria-live="polite"></p>
@@ -161,7 +164,7 @@
         <button class="gallery-photo" type="button" data-photo="assets/couple-walking.jpg" data-caption="couple-walking" aria-label="放大照片：couple-walking"><img src="assets/couple-walking.jpg" width="1334" height="2000" alt="兩人在海邊草地並肩漫步。" loading="lazy"><span class="gallery-photo__label" lang="en">couple-walking</span></button>
         <button class="gallery-photo" type="button" data-photo="assets/city-adventure.jpg" data-caption="city-adventure" aria-label="放大照片：city-adventure"><img src="assets/city-adventure.jpg" width="2000" height="1334" alt="兩人牽手跑過城市街道。" loading="lazy"><span class="gallery-photo__label" lang="en">city-adventure</span></button>
         <button class="gallery-photo" type="button" data-photo="assets/harbor-embrace.jpg" data-caption="harbor-embrace" aria-label="放大照片：harbor-embrace"><img src="assets/harbor-embrace.jpg" width="1334" height="2000" alt="兩人在港邊開心相擁。" loading="lazy"><span class="gallery-photo__label" lang="en">harbor-embrace</span></button>
-        <button class="gallery-photo" type="button" data-photo="assets/garden-walk.jpg" data-caption="garden-walk" aria-label="放大照片：garden-walk"><img src="assets/garden-walk.jpg" width="1334" height="2000" alt="兩人在綠意階梯上微笑。" loading="lazy"><span class="gallery-photo__label" lang="en">garden-walk</span></button>
+        <button class="gallery-photo" type="button" data-photo="assets/cockatiel-play.jpg" data-caption="cockatiel-play" aria-label="放大照片：cockatiel-play"><img src="assets/cockatiel-play.jpg" width="1334" height="2000" alt="兩人扶著樹枝，噘嘴逗弄停在樹枝上的玄鳳鸚鵡。" loading="lazy"><span class="gallery-photo__label" lang="en">cockatiel-play</span></button>
         <button class="gallery-photo" type="button" data-photo="assets/music-duet.jpg" data-caption="music-duet" aria-label="放大照片：music-duet"><img src="assets/music-duet.jpg" width="1334" height="2000" alt="兩人在藍色音樂佈景中拿著吉他與鍵盤。" loading="lazy"><span class="gallery-photo__label" lang="en">music-duet</span></button>
         <button class="gallery-photo" type="button" data-photo="assets/record-date.jpg" data-caption="record-date" aria-label="放大照片：record-date"><img src="assets/record-date.jpg" width="1334" height="2000" alt="兩人拿著唱片，在銀色佈景前合影。" loading="lazy"><span class="gallery-photo__label" lang="en">record-date</span></button>
       </div>
@@ -175,19 +178,19 @@
         <article class="profile">
           <div class="profile__avatar profile__avatar--groom"><img src="assets/groom-portrait.jpg" alt="新郎謝明凱" width="1334" height="2000" loading="lazy"></div>
           <h3 class="profile__name"><span>謝明凱</span> <span class="profile__name-english" lang="en">MING-KAI</span></h3>
-          <a class="profile__instagram" href="https://www.instagram.com/kevin82917/" target="_blank" rel="noopener noreferrer" aria-label="開啟 Instagram（個人帳號連結待補）"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor" stroke="none"/></svg></a>
+          <a class="profile__instagram" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="開啟 Instagram（個人帳號連結待補）"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor" stroke="none"/></svg></a>
           <dl><div><dt>星座</dt><dd>處女座</dd></div><div><dt>喜歡什麼食物</dt><dd>爽的、茶飲、牛排</dd></div><div><dt>討厭什麼東西</dt><dd>糯米椒、榴槤</dd></div><div><dt>怎麼稱呼新娘</dt><dd>寶貝</dd></div></dl>
         </article>
         <article class="profile">
           <div class="profile__avatar profile__avatar--bride"><img src="assets/bride-front-portrait.jpg" alt="張唯琤微笑的正面肖像" width="1164" height="1298" loading="lazy"></div>
           <h3 class="profile__name"><span>張唯琤</span> <span class="profile__name-english" lang="en">WEI-CHENG</span></h3>
-          <a class="profile__instagram" href="https://www.instagram.com/miffy60427judy" target="_blank" rel="noopener noreferrer" aria-label="開啟 Instagram（個人帳號連結待補）"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor" stroke="none"/></svg></a>
+          <a class="profile__instagram" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="開啟 Instagram（個人帳號連結待補）"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor" stroke="none"/></svg></a>
           <dl><div><dt>星座</dt><dd>金牛座</dd></div><div><dt>喜歡什麼食物</dt><dd><span class="food-item">辣的、</span><span class="food-item">奶茶、</span><span class="food-item">河粉、</span><span class="food-item">牛排</span></dd></div><div><dt>討厭什麼東西</dt><dd>香菇、蟑螂</dd></div><div><dt>怎麼稱呼新郎</dt><dd>寶貝</dd></div></dl>
         </article>
       </div>
     </section>
-    <!-- P.S.：將 xxx 替換為想對賓客說的話。 -->
-    <aside class="postscript paper" aria-labelledby="ps-title"><div class="postscript__note"><h2 id="ps-title" lang="en">P.S.</h2><p>若有想參加戶外證婚的貴賓，請聯繫新人的 Instagram 或「<a hert="https://line.me/ti/p/%40742clznm>"明凱唯琤拍拍印</a>」Line。</p><span aria-hidden="true">♡</span></div></aside>
+    <!-- P.S.：「明凱唯琤拍拍印」連結目前為佔位網址 https://line.me/，請替換 href 為 Line 群組/官方帳號邀請網址。 -->
+    <aside class="postscript paper" aria-labelledby="ps-title"><div class="postscript__note"><h2 id="ps-title" lang="en">P.S.</h2><p>若有想參加戶外證婚的貴賓，請聯繫新人的 Instagram 或「<a class="postscript__line" href="https://line.me/" target="_blank" rel="noopener noreferrer">明凱唯琤拍拍印</a>」Line。</p><span aria-hidden="true">♡</span></div></aside>
     <footer class="closing-banner" aria-label="期待與您一起慶祝">
       <img class="closing-banner__photo" src="assets/closing-seaside.jpg" alt="明凱與唯琤站在草地上，一起望向海洋與天空。" width="1334" height="2000" loading="lazy">
       <div class="closing-banner__message closing-banner__message--rounded"><img src="assets/closing-signature.svg" alt="WITH LOVE — MING-KAI &amp; WEI-CHENG" width="2172" height="724"></div>

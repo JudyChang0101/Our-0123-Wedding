@@ -521,3 +521,19 @@ body { background: #e8e6df; }
 @media(min-width:1600px) { .rsvp-heading { top:240px; left:max(10%,calc((100% - 1680px)/2)); width:calc((100% - 2 * max(10%,(100% - 1680px)/2)) - 830px); }.cloud-strip { margin-bottom:-280px; } }
 @media(max-width:767px) { .rsvp-heading { top:120px; } }
 @media(min-width:768px) and (max-width:1023px) { .rsvp-heading { top:150px; } }
+
+/* 2026-10-11：新郎新娘頭像以頭部大小對齊（頭頂到下巴約占圓框 60%，位置一致）。 */
+.profile__avatar img, .profile__avatar--groom img, .profile__avatar--bride img { position:absolute; inset:auto; max-width:none; object-fit:fill; transform:none; }
+.profile__avatar--groom img { width:235%; height:353%; left:-38%; top:-43%; }
+.profile__avatar--bride img { width:155%; height:172.5%; left:-19.7%; top:-5%; }
+
+/* 2026-10-11：出席回函表單改用 Google 表單預設字體（Roboto ＋ Noto Sans TC）。 */
+.rsvp-paper {
+  --font-google: Roboto, "Noto Sans TC", Arial, "PingFang TC", "Microsoft JhengHei", sans-serif;
+  --font-body: var(--font-google); --font-heading: var(--font-google); --font-serif: var(--font-google);
+  --font-handwritten: var(--font-google); --font-sans: var(--font-google);
+  font-family: var(--font-google);
+}
+.rsvp-paper [lang="en"], .rsvp-paper h3, .rsvp-paper .section-kicker, .rsvp-paper :is(input, select, textarea, button), .rsvp-paper > .rsvp-external { font-family: var(--font-google); }
+
+.attendance-form label .field-hint { display:block; margin-top:2px; font-size:.9em; color:#8a949e; letter-spacing:0; }
