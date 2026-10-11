@@ -6,8 +6,8 @@
 const WEDDING_CONFIG = Object.freeze({
   weddingDate: "2027-01-23T11:00:00+08:00",
   timeZone: "Asia/Taipei",
-  rsvpUrl: "https://docs.google.com/forms/d/e/1FAIpQLScfFhU0wPoU-n5aJ1Sqf4HNEOuYsChwdaBxTbFPQC2u9FwxBA/viewform?usp=pp_url&entry.539791525=AAAA&entry.639127675=test%40mail.com&entry.1437256306=%E7%94%B7%E6%96%B9%E5%AE%B6%E4%BA%BA%E8%A6%AA%E6%88%9A&entry.2140001566=%E6%88%91%E6%9C%83%E5%87%BA%E5%B8%AD%EF%BC%8C%E7%94%A8%E8%A1%8C%E5%8B%95%E6%94%AF%E6%8C%81&entry.50395160=1&entry.1613396080=0&entry.1284764337=%E8%91%B7%E9%A3%9F&entry.1363624224=BBBB&entry.660727228=CCCC",
-  rsvpEmbedUrl: "https://docs.google.com/forms/d/e/1FAIpQLScfFhU0wPoU-n5aJ1Sqf4HNEOuYsChwdaBxTbFPQC2u9FwxBA/viewform?usp=pp_url&entry.539791525=AAAA&entry.639127675=test%40mail.com&entry.1437256306=%E7%94%B7%E6%96%B9%E5%AE%B6%E4%BA%BA%E8%A6%AA%E6%88%9A&entry.2140001566=%E6%88%91%E6%9C%83%E5%87%BA%E5%B8%AD%EF%BC%8C%E7%94%A8%E8%A1%8C%E5%8B%95%E6%94%AF%E6%8C%81&entry.50395160=1&entry.1613396080=0&entry.1284764337=%E8%91%B7%E9%A3%9F&entry.1363624224=BBBB&entry.660727228=CCCC&embedded=true",
+  rsvpUrl: "https://docs.google.com/forms/d/e/1FAIpQLScfFhU0wPoU-n5aJ1Sqf4HNEOuYsChwdaBxTbFPQC2u9FwxBA/viewform",
+  rsvpEmbedUrl: "https://docs.google.com/forms/d/e/1FAIpQLScfFhU0wPoU-n5aJ1Sqf4HNEOuYsChwdaBxTbFPQC2u9FwxBA/viewform?embedded=true",
   rsvpDeadline: "2026/12/21",
   dressCode: "Smart Casual",
   milestone: 2,

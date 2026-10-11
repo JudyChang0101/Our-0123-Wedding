@@ -447,3 +447,77 @@ body { background: #e8e6df; }
 @media(max-width:480px) { .postscript__note { gap:12px; }.postscript__note p { font-size:15px; } }
 /* Center the bride's face within the existing circular frame. */
 .profile__avatar--bride img { transform: translate(3%, 12%) scale(1.3); transform-origin: 45% 22%; }
+
+/* Mipon moments, shared with the music illustrations. */
+.mipon { display:block; object-fit:contain; pointer-events:none; user-select:none; }
+.love-note__dove { width:75px; height:75px; top:-3px; object-fit:contain; }
+.scrapbook__birds { width:100px; height:100px; top:12px; right:12px; object-fit:contain; }
+.mipon--scrapbook { position:absolute; width:60px; height:60px; bottom:5px; left:37%; }
+.gallery-section,.about-section { position:relative; }
+.mipon--gallery { position:absolute; width:86px; height:86px; right:7%; top:0; }
+.mipon--about { position:absolute; width:64px; height:64px; right:8%; top:8px; }
+.mipon--rsvp { width:66px; height:66px; margin:0 auto 8px; }
+.rsvp-heading { padding-top:0; }
+.cloud-strip { margin-bottom:-160px; }
+.profile__instagram { text-decoration:none; }
+.venue address a { text-underline-offset:4px; }
+.closing-banner { height:clamp(250px,38.46vw,984px); }
+@media(min-width:768px) {
+ .scrapbook__birds { width:125px; height:125px; right:35px; top:30px; }
+ .mipon--scrapbook { width:85px; height:85px; bottom:0; }
+ .mipon--gallery { width:110px; height:110px; }
+ .mipon--about { width:80px; height:80px; top:0; }
+ .mipon--rsvp { width:86px; height:86px; }
+ .love-note__dove { width:95px; height:95px; }
+ .cloud-strip { margin-bottom:-195px; }
+}
+@media(min-width:1024px) {
+ .scrapbook__birds { width:155px; height:155px; right:105px; top:35px; }
+ .mipon--scrapbook { width:100px; height:100px; left:46%; bottom:35px; }
+ .mipon--rsvp { width:105px; height:105px; }
+ .rsvp-heading { padding-top:0; }
+ .cloud-strip { height:440px; margin-bottom:-255px; }
+}
+/* Wide-screen composition: full-width photography with bounded reading columns. */
+@media(min-width:1600px) {
+ .invitation { max-width:2560px; }
+ .hero { aspect-ratio:2.2; max-height:1100px; }
+ .hero__headline--art { max-width:700px; right:8%; }
+ .information { padding:100px max(10%,calc((100% - 1500px)/2)) 55px; }
+ .information__content { max-width:1280px; margin-inline:auto; column-gap:100px; }
+ .couple-heading h1.couple-title-art { max-width:760px; height:145px; }
+ .scrapbook__sheet { max-width:1460px; column-gap:110px; padding-bottom:130px; }
+ .scrapbook__greeting { font-size:42px; }
+ .celebration-note { max-width:1080px; }
+ .gallery-section { padding:90px max(8%,calc((100% - 1800px)/2)) 110px; }
+ .gallery-grid { max-width:1800px; margin-inline:auto; gap:50px; }
+ .about-section { padding:85px 10% 100px; }
+ .profiles { max-width:1280px; }
+ .profile { padding-inline:110px; }
+ .profile__avatar { width:180px; height:180px; }
+ .profile dt { font-size:18px; }.profile dd { font-size:21px; }
+ .postscript__note { max-width:1100px; }
+ .rsvp-section { grid-template-columns:minmax(0,1fr) minmax(0,740px); padding-inline:max(10%,calc((100% - 1680px)/2)); gap:0 90px; }
+ .cloud-strip { margin-inline:calc(-1 * max(12.5vw,(100vw - 1680px)/2)); height:480px; margin-bottom:-280px; }
+ .rsvp-paper { max-width:740px; }
+ .rsvp-heading h2 { font-size:42px; }
+ .rsvp-heading p { font-size:22px; }
+ .mipon--rsvp { width:130px; height:130px; }
+ .mipon--gallery { width:150px; height:150px; }
+ .mipon--about { width:115px; height:115px; top:20px; }
+ .flower-stamp--two,.flower-stamp--three,.flower-stamp--five { width:100px; height:110px; }
+ .closing-banner__message--rounded img { max-width:540px; }
+}
+.rsvp-paper > .rsvp-external { display:block; width:50%; margin:22px auto 0; padding:10px 8px; min-height:42px; background:var(--paper); color:var(--blue); border:1px solid #d9d3c5; border-radius:24px; font-size:13px; line-height:1.5; text-align:center; text-decoration:none; }
+.rsvp-paper > .rsvp-external:hover { background:#e6ddc8; }
+/* Bring the complete RSVP section 50px closer to the preceding illustration. */
+.rsvp-section { position:relative; margin-top:-50px; }
+@media(max-width:1023px) { .scrapbook__sheet { padding-bottom:95px; }.mipon--scrapbook { bottom:8px; z-index:1; } }
+/* Center the RSVP introduction within the sky, independently of form length. */
+.rsvp-heading { position:absolute; top:103px; left:7.5%; width:85%; max-width:none; margin:0; padding:0; transform:translateY(-50%); }
+.cloud-strip { margin-bottom:0; }
+@media(min-width:768px) { .rsvp-heading { top:133px; } }
+@media(min-width:1024px) { .rsvp-heading { top:220px; left:8%; width:36%; }.cloud-strip { margin-bottom:-255px; }.rsvp-paper { grid-column:2; } }
+@media(min-width:1600px) { .rsvp-heading { top:240px; left:max(10%,calc((100% - 1680px)/2)); width:calc((100% - 2 * max(10%,(100% - 1680px)/2)) - 830px); }.cloud-strip { margin-bottom:-280px; } }
+@media(max-width:767px) { .rsvp-heading { top:120px; } }
+@media(min-width:768px) and (max-width:1023px) { .rsvp-heading { top:150px; } }
