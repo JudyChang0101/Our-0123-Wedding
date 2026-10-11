@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 80" fill="none" stroke="#1968a3" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+ <title>mipon — left-facing cockatiel</title>
+ <g transform="translate(110 0) scale(-1 1)">
+  <path d="M12 67Q25 53 42 43Q54 35 57 27Q55 18 63 16Q68 14 73 17Q79 19 81 24M80 35Q81 44 76 51Q66 62 47 61L9 73L22 63"/>
+  <path d="M63 16C59 12 51 8 48 3C57 5 65 9 69 16M69 15C66 10 61 5 57 2C67 5 72 10 73 17M61 16Q53 14 49 10" stroke-width="1.5"/>
+  <path d="M81 24C87 23 91 27 89 32Q87 36 83 38C86 32 82 31 80 30Q78 27 81 24ZM80 32Q79 35 83 35" stroke-width="1.6"/>
+  <circle cx="74" cy="23" r="1.55" fill="#1968a3" stroke="none"/>
+  <path d="M68 28C61 25 61 35 66 37C72 39 74 31 70 29" stroke-width="1.4"/>
+  <path d="M48 40Q58 35 65 40Q64 51 40 58Q37 50 48 40ZM43 53Q52 48 56 43M48 58Q59 53 63 48M31 59L17 68" stroke-width="1.5"/>
+  <path d="M49 62L47 69Q42 68 40 72M47 69L53 73M47 69L47 74M69 57L70 67Q74 66 77 70M70 67L64 71" stroke-width="1.6"/>
+ </g>
+</svg>
