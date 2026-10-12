@@ -537,3 +537,12 @@ body { background: #e8e6df; }
 .rsvp-paper [lang="en"], .rsvp-paper h3, .rsvp-paper .section-kicker, .rsvp-paper :is(input, select, textarea, button), .rsvp-paper > .rsvp-external { font-family: var(--font-google); }
 
 .attendance-form label .field-hint { display:block; margin-top:2px; font-size:.9em; color:#8a949e; letter-spacing:0; }
+
+/* 2026-10-12：關於我們的個人介紹改用 Roboto（中文由 Noto Sans TC 顯示），與出席回函表單一致。 */
+.profile {
+  --font-google: Roboto, "Noto Sans TC", Arial, "PingFang TC", "Microsoft JhengHei", sans-serif;
+  --font-body: var(--font-google); --font-heading: var(--font-google); --font-serif: var(--font-google);
+  --font-handwritten: var(--font-google); --font-sans: var(--font-google);
+  font-family: var(--font-google);
+}
+.profile h3, .profile h3 span, .profile [lang="en"], .profile dt, .profile dd, .profile .food-item { font-family: var(--font-google); }
