@@ -560,3 +560,4 @@ html[data-lang="en"] .navigation__panel a span { display: none; }
 /* 2026-10-22：相簿外框不顯示檔名，保留拍立得底部留白；放大檢視的說明文字不變。 */
 .gallery-photo { padding-bottom: 30px; }
 @media (min-width:768px) { .gallery-photo { padding-bottom: 42px; } }
+

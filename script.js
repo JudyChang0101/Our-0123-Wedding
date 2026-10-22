@@ -17,7 +17,7 @@ const WEDDING_CONFIG = Object.freeze({
 /* 中英切換：中文以 HTML 原文為準，英文寫在下方 EN。
  * 網址加 ?lang=en 直接開英文版；選擇會記在瀏覽器。
  * 選項的 value 維持中文，送進 Google 表單的內容不受語言影響。 */
-const LINE_URL = "https://line.me/ti/p/%40742clznm";
+const LINE_URL = "https://line.me/ti/"; // ← LINE 連結只要改這裡，中英文版都會跟著換
 const EN = {
   pageTitle: "Ming-Kai & Wei-Cheng | We're Getting Married",
   pageDesc: "Ming-Kai Hsieh and Wei-Cheng Chang are getting married. Saturday, January 23, 2027, at Le Méridien Taipei.",
@@ -132,6 +132,7 @@ function setLang(lang, remember = true) {
     });
   });
   document.querySelectorAll("[data-set-lang]").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.setLang === currentLang)));
+  document.querySelectorAll(".postscript__line").forEach((link) => { link.href = LINE_URL; });
   const deadline = document.querySelector("[data-rsvp-deadline]");
   if (deadline) deadline.textContent = t("rsvpDeadline");
   if (typeof menu !== "undefined") menuToggle.setAttribute("aria-label", t(menu.hidden ? "menuOpen" : "menuClose"));
