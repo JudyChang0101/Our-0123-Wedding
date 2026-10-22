@@ -546,3 +546,17 @@ body { background: #e8e6df; }
   font-family: var(--font-google);
 }
 .profile h3, .profile h3 span, .profile [lang="en"], .profile dt, .profile dd, .profile .food-item { font-family: var(--font-google); }
+
+/* 2026-10-22：中英切換（導覽最下方的小開關）。 */
+.navigation__panel .navigation__lang { display: flex; align-items: center; justify-content: flex-end; gap: 6px; padding: 12px 0 2px; color: var(--blue); }
+.navigation__panel .navigation__lang-icon { width: 13px; height: 13px; opacity: .7; flex: none; }
+.navigation__panel .navigation__lang button { display: inline-block; width: auto; min-height: 0; padding: 3px 2px; border: 0; border-bottom: 1px solid transparent; border-radius: 0; background: none; color: #7d8b97; font: 12px/1.3 var(--font-body); letter-spacing: .6px; cursor: pointer; }
+.navigation__panel .navigation__lang button[aria-pressed="true"] { color: var(--blue); border-bottom-color: currentColor; }
+.navigation__panel .navigation__lang button:hover { color: var(--blue); }
+.navigation__panel .navigation__lang-sep { font-size: 11px; color: #b3bcc4; }
+html[data-lang="en"] .venue__english { display: none; }
+html[data-lang="en"] .navigation__panel a span { display: none; }
+
+/* 2026-10-22：相簿外框不顯示檔名，保留拍立得底部留白；放大檢視的說明文字不變。 */
+.gallery-photo { padding-bottom: 30px; }
+@media (min-width:768px) { .gallery-photo { padding-bottom: 42px; } }
